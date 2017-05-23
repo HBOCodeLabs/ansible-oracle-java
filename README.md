@@ -5,6 +5,11 @@ williamyeh.oracle-java for Ansible Galaxy
 
 [![Circle CI](https://circleci.com/gh/William-Yeh/ansible-oracle-java.svg?style=shield)](https://circleci.com/gh/William-Yeh/ansible-oracle-java) [![Build Status](https://travis-ci.org/William-Yeh/ansible-oracle-java.svg?branch=master)](https://travis-ci.org/William-Yeh/ansible-oracle-java)
 
+## HBO Summary
+This is a fork of williamyeh.oracle-java that pulls the JDK from our S3 bucket instead of Oracle to work around the fact the Oracle likes to break JDK download links.
+
+JDKs are stored in https://console.aws.amazon.com/s3/buckets/hbo-jdk/?region=us-west-2 and must be added to "tasks/set-role-variables.yml" for support.
+
 ## Summary
 
 Role name in Ansible Galaxy: **[williamyeh.oracle-java](https://galaxy.ansible.com/detail#/role/2851)**
